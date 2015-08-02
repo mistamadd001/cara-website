@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cara Pearson Glass</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id='image'>
+              <a class="navbar-brand" href="#">
+                <img class='logo' src="images/LOGO.png">
+              </a>
+            </div>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="profile.html">Artist Profile</a></li>
+              <li class="dropdown">
+                <a href="portfolio.html" class="dropdown-toggle disabled active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="portfolio.html#gely">'For to make a Gely'</a></li>
+                  <li><a href="portfolio.html#necessity">'Obsolete Necessity'</a></li>
+                  <li><a href="portfolio.html#blancmange">'A Blancmange Affair'</a></li>
+                </ul>
+              </li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class='content'>
+        
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.navbar .dropdown').hover(function() {
+        <!-- TODO: animate instead of slide -->
+        $(this).find('.dropdown-menu').first().stop(true, true).slideToggle(100,'swing');
+      });
+    </script>
+  </body>
+</html>
