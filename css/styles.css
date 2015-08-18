@@ -30,6 +30,7 @@ body{
 }
 nav {
     margin-top: 20px;
+    font-size: 16px;
 }
 
 .navbar ul:hover {
@@ -81,7 +82,7 @@ ul .dropdown-menu li a {
 
 .content {
     width: 95%;
-    margin: 20px auto 0 auto;
+    margin: 10px auto;
     border-style: solid;
     border: 5px;
     border-color: #333;
@@ -125,6 +126,7 @@ textarea{
 .form {
     padding: 5px;
     vertical-align: top;
+    color: #000;
 }
 textarea:focus, input:focus{
     outline: 0;
@@ -143,4 +145,35 @@ p {
 .content ul {
     list-style: circle;
 }
-
+.unavailable {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.unavailable{
+    -webkit-filter: blur(20%) grayscale(100%);
+    -moz-filter: blur(20%) grayscale(100%);
+    -o-filter: blur(20%) grayscale(100%);
+    -ms-filter: blur(20%) grayscale(100%);
+    filter: blur(20%) grayscale(100%);
+}
+.product-image{
+    max-width: 100px;
+    max-height: 100px;
+}
+.uImg{
+    max-width: 100px;
+    max-height: 100px;
+}
+.zoom {
+    display: block;
+}
+.zoom-image {
+    max-height: 450px;
+    max-width: 100%;
+}
+.webdev {
+    margin: 10px;
+}
