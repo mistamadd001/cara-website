@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id='image'>
+            <a class="navbar-brand" href="#">
+              <img class='logo' src="images/logo.png">
+            </a>
+          </div>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class='home'><a href="index.html">Home</a></li>
+            <li class='profile'><a href="profile.html">Artist Profile</a></li>
+            <li class="dropdown">
+              <a href="portfolio.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio.html#gely">'For to make a Gely'</a></li>
+                <li><a href="portfolio.html#necessity">'Obsolete Necessity'</a></li>
+                <li><a href="portfolio.html#blancmange">'A Blancmange Affair'</a></li>
+              </ul>
+            </li>
+            <li class='shop'><a href="shop.php">Shop</a></li>
+            <li class='resume'><a href="resume.html">Resume</a></li>
+            <li class='contact'><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $('.navbar .dropdown').hover(function() {
+        <!-- TODO: animate instead of slide -->
+        $(this).find('.dropdown-menu').first().stop(true, true).slideToggle(200,'linear');
+      });
+    </script>
+  </body>
+</html>
